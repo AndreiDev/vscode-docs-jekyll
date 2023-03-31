@@ -151,7 +151,7 @@ The available `editor.suggestSelection` values are:
 * `first` - (default) Always select the first suggestion.
 * `recentlyUsed` - The previously used item is selected unless a prefix (type to select) selects a different item.
 * `recentlyUsed` - The previously used item is selected unless a prefix (type to select) selects a different item.
-* `recentlyUsedByPrefix` - Select items based on previous prefixes that have completed those suggestions.
+
 Selecting the most recently used item is very useful as you can quickly insert the same completion multiple times.
 
 "Type to select" means that the current prefix (roughly the text left of the cursor) is used to filter and sort suggestions. When this happens and when its result differs from the result of `recentlyUsed`, it will be given precedence.
