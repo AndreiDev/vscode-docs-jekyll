@@ -149,7 +149,6 @@ By default, VS Code pre-selects the first suggestion in the suggestion list. If 
 The available `editor.suggestSelection` values are:
 
 * `first` - (default) Always select the top list item.
-* `last` - Select the last used item in the suggestion list.
 * `recentlyUsed` - The previously used item is selected unless a prefix (type to select) selects a different item.
 * `recentlyUsedByPrefix` - Select items based on previous prefixes that have completed those suggestions.
 
