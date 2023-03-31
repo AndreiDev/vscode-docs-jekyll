@@ -150,6 +150,7 @@ The available `editor.suggestSelection` values are:
 
 * `first` - (default) Always select the first suggestion.
 * `last` - Select the last used item in the suggestion list.
+* `last` - Select the last used item in the suggestion list.
 * `recentlyUsed` - The previously used item is selected unless a prefix (type to select) selects a different item.
 * `recentlyUsedByPrefix` - Select items based on previous prefixes that have completed those suggestions.
 
