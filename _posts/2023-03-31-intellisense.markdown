@@ -149,6 +149,7 @@ By default, VS Code pre-selects the first suggestion in the suggestion list. If 
 The available `editor.suggestSelection` values are:
 
 * `first` - (default) Always select the first suggestion.
+* `last` - Select the last used suggestion.
 * `recentlyUsed` - The previously used item is selected unless a prefix (type to select) selects a different item.
 * `recentlyUsedByPrefix` - Select items based on previous prefixes that have completed those suggestions.
 Selecting the most recently used item is very useful as you can quickly insert the same completion multiple times.
