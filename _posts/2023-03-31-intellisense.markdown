@@ -142,14 +142,11 @@ Sorting of suggestions depends on extension information and on how well they mat
 
 In above images you can see that `count`, `context`, and `colocated` are sorted based on the scopes in which they appear (loop, function, file).
 
-### Suggestion selection
-
 By default, VS Code pre-selects the first suggestion in the suggestion list. If you'd like different behavior, for example, to always select the most recently used item in the suggestion list, you can use the `editor.suggestSelection` setting.
 
 The available `editor.suggestSelection` values are:
 
 * `first` - (default) Always select the first suggestion.
-* `last` - Select the last used suggestion.
 * `recentlyUsed` - The previously used item is selected unless a prefix (type to select) selects a different item.
 * `recentlyUsedByPrefix` - Select items based on previous prefixes that have completed those suggestions.
 Selecting the most recently used item is very useful as you can quickly insert the same completion multiple times.
@@ -157,7 +154,6 @@ Selecting the most recently used item is very useful as you can quickly insert t
 "Type to select" means that the current prefix (roughly the text left of the cursor) is used to filter and sort suggestions. When this happens and when its result differs from the result of `recentlyUsed`, it will be given precedence.
 
 When using the last option, `recentlyUsedByPrefix`, VS Code remembers which item was selected for a specific prefix (partial text). For example, if you typed `co` and then selected `console`, the next time you typed `co`, the suggestion `console` would be pre-selected. This lets you quickly map various prefixes to different suggestions, for example `co` -> `console` and `con` -> `const`.
-
 ### Snippets in suggestions
 
 By default, VS Code shows snippets and completion proposals in one widget. You can control the behavior with the `editor.snippetSuggestions` setting. To remove snippets from the suggestions widget, set the value to `"none"`. If you'd like to see snippets, you can specify the order relative to suggestions; at the top (`"top"`), at the bottom (`"bottom"`), or inline ordered alphabetically (`"inline"`). The default is `"inline"`.
