@@ -143,13 +143,11 @@ Sorting of suggestions depends on extension information and on how well they mat
 In above images you can see that `count`, `context`, and `colocated` are sorted based on the scopes in which they appear (loop, function, file).
 
 ### Suggestion selection
-
 By default, VS Code pre-selects the first suggestion in the suggestion list. If you'd like different behavior, for example, to always select the most recently used item in the suggestion list, you can use the `editor.suggestSelection` setting.
 
 The available `editor.suggestSelection` values are:
 
 * `first` - (default) Always select the first suggestion.
-* `last` - Select the last used suggestion.
 * `recentlyUsed` - The previously used item is selected unless a prefix (type to select) selects a different item.
 * `recentlyUsedByPrefix` - Select items based on previous prefixes that have completed those suggestions.
 Selecting the most recently used item is very useful as you can quickly insert the same completion multiple times.
