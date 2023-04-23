@@ -128,6 +128,7 @@ The editor supports "tab completion" which inserts the best matching completion 
 
 ![Tab Completion](/images/intellisense/tabCompletion.gif)
 
+
 By default, tab completion is disabled. Use the `editor.tabCompletion` setting to enable it. These values exist:
 
 * `off` - (default) Tab completion is disabled.
